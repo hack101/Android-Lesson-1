@@ -262,7 +262,7 @@ Now to add this view to our `calculateTip` method.
         // declare our tip variable
         float tip;
 
-        // calculate the top according to button is selected
+        // calculate the tip according to button is selected
         if (low.isChecked())
             tip = bill * 13 / 100;
         else if (mid.isChecked())
@@ -298,3 +298,4 @@ And voila! We have our first working app!
 
 ![successful app running]()
 
+Thanks for coming to our tutorial and next time will we go over making more complex apps by having multiple screens as opposed to just the one we had today.
