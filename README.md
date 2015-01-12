@@ -56,8 +56,10 @@ You should also see a log pop up at the bottom of your screen. This will let you
 
 Great, we have a hello world! But how did that all work? Let's have a look at `res/layout/activity_main.xml`. This is the file that specifies what our main activity (the screen a user sees when they open the app) will look like. There are two ways to view this file, Design, and Text (there are tabs at the bottom of the screen which let you switch back and forth). The Design view provides you with a graphical user interface to design your app, while the text view lets you write XML (extensible markup language) to specify your app's appearance (you can think of as being XML is analogous to the HTML in a website). We will be working in the Text view for this tutorial.
 
+*Design View*:
 ![design view](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/main_xml_design.png)
 
+*Text View*:
 ![text view](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/main_xml_text.png)
 
 Let's break down what we have inside this XML file. In short, XML is a language used to describe how our app will look to users. Notice that everything is wrapped inside `<RelativeLayout ... > ... </RelativeLayout>`. We call this a tag and XML documents are made up entirely by them.  I won't go into too much detail, but for a quick summary you can see [here](http://www.w3schools.com/xml/xml_syntax.asp).
