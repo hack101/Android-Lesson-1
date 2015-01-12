@@ -1,6 +1,6 @@
 # Hack101: Android - Lesson 1 #
 
-### Intro And Setting Up ### 
+### Intro And Setting Up 
 
 Hello, and welcome to the first Hack101 of the semester. We will be having 5 Hack101 sessions where we will cover the basics of Android programming. The schedule so far looks like this (subject to change):
 
@@ -20,7 +20,7 @@ If you want to run your apps on your Android phone, you have to turn on USB debu
 
 Today we will be building a simple tip calculator to help us learn about how Android apps work. We begin by opening up Android Studio. Upon opening the program we will be prompted to either start a new project, or import/open an existing project. Let's start a new project. When we click to start a new project we are prompted to enter a project name and a company domain. The company domain is used to unsure that each App has a unique identifier. Since we are not going to be releasing the app the to public, this isn't a huge concern of ours, however. I choose a project name of "Tip Calculator".
 
-![starting an app]()
+![starting an app](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/creating_an_app.png)
 
 Next we choose what kind of project we are making. Were making an app for phones, so let's choose "Phone and Tablet" and a minimum SDK of 4.0.3, as android studio recommends. Here we are specifying the minimum operating system we expect our app to be running on. Lower operating systems mean more phones can run it, but this also means that some features of newer Android OS's will not be available to us.
 
@@ -50,15 +50,15 @@ The final folder is `res`, standing for resources. This folder contains multiple
 
 Now that we understand what all these folders do, let's run our app and see what it does! Select the "Run" option at the top of Android studio. If you have an Android phone, connect it to you computer and make sure it is unlocked with USB debugging enabled. A window will pop up asking you how you would like to run your app. You should see your phone as an option here. If you do not have a phone, then select the "Launch Emulator" option. Be warned that the emulator is slow and can also slow down your computer a bit. Here's what you should see!
 
-![hello world]()
+![hello world](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/hello_world.png)
 
 You should also see a log pop up at the bottom of your screen. This will let you know what caused a crash if there is one. Also, if you wish to do debugging using `System.out.println()`, this is where you will see the result printed. 
 
 Great, we have a hello world! But how did that all work? Let's have a look at `res/layout/activity_main.xml`. This is the file that specifies what our main activity (the screen a user sees when they open the app) will look like. There are two ways to view this file, Design, and Text (there are tabs at the bottom of the screen which let you switch back and forth). The Design view provides you with a graphical user interface to design your app, while the text view lets you write XML (extensible markup language) to specify your app's appearance (you can think of as being XML is analogous to the HTML in a website). We will be working in the Text view for this tutorial.
 
-![design view]()
+![design view](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/main_xml_design.png)
 
-![text view]()
+![text view](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/main_xml_text.png)
 
 Let's break down what we have inside this XML file. In short, XML is a language used to describe how our app will look to users. Notice that everything is wrapped inside `<RelativeLayout ... > ... </RelativeLayout>`. We call this a tag and XML documents are made up entirely by them.  I won't go into too much detail, but for a quick summary you can see [here](http://www.w3schools.com/xml/xml_syntax.asp).
 
@@ -70,7 +70,7 @@ The layout tag is not explicitly visible to the user, it specifies how to layout
 
 Let's jump back to `activity_main.xml`. Looks like there's an error now! 
 
-![can't resolve hello world]()
+![can't resolve hello world](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/cant_resolve.png)
 
 Of course, we changed the name of the value, so our XML file can't find it anymore. This is a quick fix though. replace `@string/hello_world` with `@string/hello_amiel`, and everything should be well again. We can run the app again and see that the text has changed, or on the right of our XML file we should see a little preview which shows us.
 
@@ -84,7 +84,7 @@ OK, now we are ready to write some XML to make our app look how we want it too! 
 
 Let's get rid of that TextView and add an EditText. Android studio will do some autocompleting for us...
 
-![autocomplete]()
+![autocomplete](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/edit_text.png)
 
 I want the text area to fill the screen and I want it to be as high as the text that is going in it, so I will give it the following attributes:
 
@@ -118,7 +118,7 @@ to the file.
 
 Great! We can now launch the app and see that our text area works!
 
-![edit text works]()
+![edit text works](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/edit_text_works.png)
 
 Let's add the radio buttons and the calculate button. 
 
@@ -164,7 +164,7 @@ The outer wrapper RadioGroup groups our buttons together, and each button is a n
 
 If we run our app, we see that everything looks good! 
 
-![main page looks good]()
+![main page looks good](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/main_page_done.png)
 
 But our app only looks nice. It is still dumb. Pressing the button does nothing. This is where the Java comes in.
 
@@ -296,6 +296,6 @@ OK, we're almost done! The one problem is that our method is never called! The "
 
 And voila! We have our first working app!
 
-![successful app running]()
+![successful app running](https://raw.githubusercontent.com/hack101/Android-Lesson-1/master/screencaps/finished_app.png)
 
 Thanks for coming to our tutorial and next time will we go over making more complex apps by having multiple screens as opposed to just the one we had today.
